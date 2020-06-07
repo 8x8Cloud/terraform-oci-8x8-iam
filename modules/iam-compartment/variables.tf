@@ -1,7 +1,8 @@
 // Copyright (c) 2018, Oracle and/or its affiliates. All rights reserved.
 
 variable "target_compartment_ocid" {
-  description = "The OCID of the tenancy. "
+  description = "The OCID of the target compartment. "
+  type = string
 }
 
 variable "compartment_name" {
