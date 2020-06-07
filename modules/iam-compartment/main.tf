@@ -6,14 +6,14 @@
 
 resource "oci_identity_compartment" "this" {
   count          = "${var.compartment_create ? 1 : 0}"
-  compartment_id = "${var.tenancy_ocid}"
+  compartment_id = "${var.target_compartment_ocid}"
   name           = "${var.compartment_name}"
   description    = "${var.compartment_description}"
 }
 
 data "oci_identity_compartments" "this" {
   count          = "${var.compartment_create ? 0 : 1}"
-  compartment_id = "${var.tenancy_ocid}"
+  compartment_id = "${var.target_compartment_ocid}"
 
   filter {
     name   = "name"

@@ -1,6 +1,6 @@
 // Copyright (c) 2018, Oracle and/or its affiliates. All rights reserved.
 
-variable "tenancy_ocid" {
+variable "target_compartment_ocid" {
   description = "The OCID of the tenancy. "
 }
 
