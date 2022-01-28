@@ -1,0 +1,1 @@
+## This module's considered deprecated in favor of https://github.com/8x8Cloud/terraform-oci-8x8-compartment
